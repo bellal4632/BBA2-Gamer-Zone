@@ -68,7 +68,7 @@ main {
 
 /* Banner Section Styles */
 .banner-container {
-    padding: 0 150px;
+    /* padding: 0 150px; */
     /* height: 100vh; */
     display: flex;
     justify-content: space-between;
@@ -77,16 +77,18 @@ main {
 }
 
 .banner-content {
-    padding: 100px 0;
+    width: 50%;
+    padding: 100px 0 100px 150px;
     background-image: url("../images/Group 14.png");
     background-repeat: no-repeat;
     background-position: 0 50%;
-    background-size: auto;
+    background-size:700px;
 }
 
 .banner-container>img {
-    width: 450px;
-}i
+    height: 400px;
+    padding: 0 150px 0 0;
+}
 
 .banner-title {
     color: #0B0223;
