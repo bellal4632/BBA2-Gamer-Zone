@@ -6,18 +6,49 @@
     margin: 0;
 }
 
-/* header section style */
-header {
-    height: 100vh;
+/* Shared Styles */
+.primary-btn {
+    margin: 5px;
+    border-radius: 48px;
+    background: #FF42A5;
+    padding: 15px 30px;
+    border: 0;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 150px;
-    background: #FFF;
-    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+.secondary-btn {
+    border-radius: 48px;
+    background: #4EC5F7;
+    padding: 15px 30px;
+    border: 0;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.section-title {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.title-effect {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-desc {
+    color: #534C64;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 10px 0;
 }
 
 .logo-container {
@@ -40,6 +71,25 @@ nav {
     color: #FF42A5;
 }
 
+.logo-text-white {
+    color: #ffffff;
+}
+
+/* header section style */
+header {
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 150px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+
 nav>ul {
     display: flex;
     align-items: center;
@@ -61,11 +111,6 @@ nav li>i {
     background: rgba(11, 2, 35, 0.10);
 }
 
-
-main {
-    padding: 0 150px;
-}
-
 /* Banner Section Styles */
 .banner-container {
     /* padding: 0 150px; */
@@ -82,11 +127,11 @@ main {
     background-image: url("../images/Group 14.png");
     background-repeat: no-repeat;
     background-position: 0 50%;
-    background-size:700px;
+    background-size: 100%;
 }
 
 .banner-container>img {
-    height: 400px;
+    height: 470px;
     padding: 0 150px 0 0;
 }
 
@@ -94,10 +139,10 @@ main {
     color: #0B0223;
     font-size: 40px;
     font-weight: 600;
+    margin-bottom: 25px;
 }
 
 .goat {
-
     font-size: 80px;
     font-weight: 800;
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
@@ -106,8 +151,159 @@ main {
     -webkit-text-fill-color: transparent;
 }
 
+.banner-text {
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+/* Main Section Styles */
+main {
+    padding: 0 150px;
+}
+
+/* Gammer Section Styles */
+
+.gamer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 80px 0; */
+    text-align: right;
+    gap: 5px;
+}
+
+section {
+    padding: 100px 0;
+}
+
+.gamer-container>img {
+    width: 50%;
+}
+
+.purpose-text {
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 35px;
+}
+
+.purpose-text-bold {
+    color: #534C64;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+/* Game Cards Section */
+.games-container {
+    text-align: center;
+}
+
+.game-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.card {
+    width: 250px;
+    border-radius: 5px;
+}
+
+.card>img {
+    width: 220px;
+
+}
+
+.card-title {
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+/* Play Instant Section  */
+.play-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.play-content {
+    width: 50%;
+    text-align: right;
+}
+
+.play-images {
+    width: 50%;
+    background-image: url("../images/Rectangle 55.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 100% 0%;
+    padding: 250px 0 0 0;
+}
+
+.play-images>img {
+    width: 200px;
+    margin-top: 250px;
+}
 
 
+/* Footer Section */
+footer {
+    padding: 100px 150px;
+    background-color: #0B0223;
+    margin: auto;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 35px;
+}
+
+.footer-list-item {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footer-icons{
+    text-align: center;
+    padding: 20px 0;
+}
+.footer-icons>i{
+    padding: 0 25px;
+}
+
+.footer-auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 35px;
+}
+
+.footer-auth-item, .footer-text {
+    color: #ffffff99;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer-text {
+    text-align: center;
+}
 
 /* Responsive Section */
 
