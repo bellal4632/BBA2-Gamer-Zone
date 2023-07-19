@@ -332,9 +332,10 @@ div.play-images-two {
 }
 
 .game-lines {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     margin: 15px 0;
+    gap: 15px;
 }
 
 .game {
@@ -374,11 +375,14 @@ footer {
 }
 
 .footer-list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
     justify-content: center;
     align-items: center;
     padding: 20px 0;
+    row-gap: 35px;
     gap: 35px;
+    text-align: center;
 }
 
 .footer-list-item {
@@ -388,8 +392,12 @@ footer {
 }
 
 .footer-icons {
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+    align-items: center;
     padding: 20px 0;
+    gap: 35px;
 }
 
 .footer-icons>i {
@@ -397,9 +405,11 @@ footer {
 }
 
 .footer-auth {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     align-items: center;
+    text-align: center;
     padding: 20px 0;
     gap: 35px;
 }
@@ -419,25 +429,30 @@ footer {
 
 /* Mobile Devices */
 @media screen and (max-width: 425px) {
+
     /* * {
         padding: 0;
         margin: 0;
     } */
-section{
-    padding: 0;
-    margin: 0;
-}
+    section {
+        padding: 0;
+        margin: 0 20px;
+    }
+
     nav,
     nav>ul,
     .banner-container,
     .gamer-container,
     .game-cards,
-    .play-container {
+    .play-container,
+    .games-type {
         flex-direction: column;
     }
-    .play-container{
+
+    .play-container {
         text-align: center;
     }
+
     nav>ul>li {
         padding: 10px 0;
     }
@@ -457,34 +472,76 @@ section{
         order: 2;
     }
 
+
     .banner-content,
-    .gamer-content,
+    .gamer-content,    
     .play-content,
-    .play-images {
-        padding: 30px 50px;
+    .games-type,
+    footer {
+        padding: 30px 15px;
         width: 400px;
         text-align: center;
     }
 
-    .gamer-container>img,
-    .play-images-one {
+    .games-type {
+        margin: 50px 0 0 0;
+    }
+
+    .play-images {
+        margin: 30px 10px;
+        /* padding: 30px 10px; */
+        width: 400px;
+        text-align: center;
+    }
+
+    /* .play-images-one>img{
+        width: 100px;
+    } */
+
+    .gamer-container>img {
         width: 400px;
     }
+
+    div.play-images-one>img {
+        width: 400px;
+        /* height: 100%; */
+    }
+
 
 
     .banner-image {
         order: 1;
         width: 400px;
-        padding: 30px 50px;
+        /* padding: 30px 50px; */
     }
 
     .banner-image>img {
         width: 100%;
     }
-.card{
-    margin: auto;
-}
 
+    .card {
+        margin: auto;
+    }
+
+    .game-lines {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-list,
+    .footer-icons {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer-icons>i,
+    .footer-list>p,
+    .footer-auth>p {
+        padding: 10px 25px;
+    }
+.footer-auth{
+    grid-template-columns: repeat(2, 1fr);
+}
+.footer>p{
+    width:auto ;
+}
 }
 
 /* Tablet Devices */
