@@ -75,6 +75,14 @@
     color: #ffffff;
 }
 
+section {
+    padding: 100px 0;
+}
+section {
+    padding: 100px 150px;
+}
+
+
 /* header section style */
 header {
     height: 100vh;
@@ -159,9 +167,9 @@ nav li>i {
 }
 
 /* Main Section Styles */
-main {
+/* main {
     padding: 0 150px;
-}
+} */
 
 /* Gammer Section Styles */
 
@@ -174,9 +182,6 @@ main {
     gap: 5px;
 }
 
-section {
-    padding: 100px 0;
-}
 
 .gamer-container>img {
     width: 50%;
@@ -228,7 +233,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 50px;
 }
 
 .play-content {
@@ -236,6 +241,28 @@ section {
     text-align: right;
 }
 
+div.play-images-one {
+    width: 50%;
+    position: relative;
+    /* width: 00px; */
+  } 
+  div.play-images-one>img{
+    width: 500px;
+    height: 100%;
+  }
+  div.play-images-two>img{
+    width: 60%;
+  }
+  div.play-images-two {
+    position: absolute;
+    top: 350px;
+    left: -25px;
+    /* width: 200px;
+    height: 100px; */
+    /* border: 3px solid #73AD21; */
+  }
+
+/* 
 .play-images {
     width: 50%;
     background-image: url("../images/Rectangle 55.png");
@@ -248,11 +275,11 @@ section {
 .play-images>img {
     width: 200px;
     margin-top: 250px;
-}
+} */
 
 /* Games Type Section */
 .games-type {
-    background-color: #cea1b8ad;
+    background-color: #ffcae550;
 }
 .game-lines{
     display: flex;
@@ -265,8 +292,18 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
-    padding: 5px;
+    /* gap: 10px; */
+    padding: 10px;
+    margin: 0 10px;
+}
+.game>img{
+    width: 40px;
+}
+.game-type-name{
+    color: #0B0223;
+font-size: 14px;
+font-weight: 500;
+padding-left: 10px;
 }
 
 /* Footer Section */
