@@ -250,6 +250,24 @@ section {
     margin-top: 250px;
 }
 
+/* Games Type Section */
+.games-type {
+    background-color: #cea1b8ad;
+}
+.game-lines{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px 0;
+}
+.game {
+    border-radius: 50px;
+    background: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 5px;
+}
 
 /* Footer Section */
 footer {
@@ -279,11 +297,12 @@ footer {
     font-weight: 500;
 }
 
-.footer-icons{
+.footer-icons {
     text-align: center;
     padding: 20px 0;
 }
-.footer-icons>i{
+
+.footer-icons>i {
     padding: 0 25px;
 }
 
@@ -295,7 +314,8 @@ footer {
     gap: 35px;
 }
 
-.footer-auth-item, .footer-text {
+.footer-auth-item,
+.footer-text {
     color: #ffffff99;
     font-size: 14px;
     font-weight: 400;
