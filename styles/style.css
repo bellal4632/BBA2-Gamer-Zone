@@ -78,15 +78,14 @@
 section {
     padding: 100px 0;
 }
+
 section {
     padding: 100px 150px;
 }
 
 
 /* header section style */
-header {
-    height: 100vh;
-}
+
 
 nav {
     display: flex;
@@ -212,21 +211,76 @@ nav li>i {
 }
 
 .card {
+    display: inline-block;
+    justify-content: center;
     width: 250px;
     border-radius: 5px;
+    padding: 15px 0;
 }
 
-.card>img {
-    width: 220px;
+.image-card>img {
+    width: 230px;
+    /* height: 100%; */
 
 }
 
 .card-title {
     color: #534C64;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 30px;
+    text-align: left;
 }
+
+
+.image-card {
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.hover-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 2px solid #F948B2;
+}
+
+.image-card:hover .hover-item {
+    opacity: 1;
+}
+
+.hover-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.hover-content i {
+    font-size: 30px;
+}
+
+.hover-text {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #F948B2;
+}
+
+
 
 /* Play Instant Section  */
 .play-container {
@@ -245,47 +299,44 @@ div.play-images-one {
     width: 50%;
     position: relative;
     /* width: 00px; */
-  } 
-  div.play-images-one>img{
+}
+
+div.play-images-one>img {
     width: 500px;
     height: 100%;
-  }
-  div.play-images-two>img{
-    width: 60%;
-  }
-  div.play-images-two {
+}
+
+div.play-images-two>img {
+    width: 120px;
+}
+
+div.play-images-two {
     position: absolute;
     top: 350px;
-    left: -25px;
+    left: -40px;
     /* width: 200px;
     height: 100px; */
     /* border: 3px solid #73AD21; */
-  }
-
-/* 
-.play-images {
-    width: 50%;
-    background-image: url("../images/Rectangle 55.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: 100% 0%;
-    padding: 250px 0 0 0;
 }
 
-.play-images>img {
-    width: 200px;
-    margin-top: 250px;
-} */
+
+.play-images {
+    width: 50%;
+}
+
+
 
 /* Games Type Section */
 .games-type {
     background-color: #ffcae550;
 }
-.game-lines{
+
+.game-lines {
     display: flex;
     justify-content: space-evenly;
     margin: 15px 0;
 }
+
 .game {
     border-radius: 50px;
     background: #FFF;
@@ -296,14 +347,16 @@ div.play-images-one {
     padding: 10px;
     margin: 0 10px;
 }
-.game>img{
+
+.game>img {
     width: 40px;
 }
-.game-type-name{
+
+.game-type-name {
     color: #0B0223;
-font-size: 14px;
-font-weight: 500;
-padding-left: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 10px;
 }
 
 /* Footer Section */
@@ -365,11 +418,73 @@ footer {
 /* Responsive Section */
 
 /* Mobile Devices */
-@media screen and (max-width: 576px) {
-    * {
+@media screen and (max-width: 425px) {
+    /* * {
         padding: 0;
         margin: 0;
+    } */
+section{
+    padding: 0;
+    margin: 0;
+}
+    nav,
+    nav>ul,
+    .banner-container,
+    .gamer-container,
+    .game-cards,
+    .play-container {
+        flex-direction: column;
     }
+    .play-container{
+        text-align: center;
+    }
+    nav>ul>li {
+        padding: 10px 0;
+    }
+
+    #follow-icon {
+        display: flex;
+        width: 200px;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .banner-image {
+        order: 1
+    }
+
+    .banner-content {
+        order: 2;
+    }
+
+    .banner-content,
+    .gamer-content,
+    .play-content,
+    .play-images {
+        padding: 30px 50px;
+        width: 400px;
+        text-align: center;
+    }
+
+    .gamer-container>img,
+    .play-images-one {
+        width: 400px;
+    }
+
+
+    .banner-image {
+        order: 1;
+        width: 400px;
+        padding: 30px 50px;
+    }
+
+    .banner-image>img {
+        width: 100%;
+    }
+.card{
+    margin: auto;
+}
+
 }
 
 /* Tablet Devices */
