@@ -340,10 +340,11 @@ div.play-images-two {
 }
 
 .game {
+    width: 200px;
     border-radius: 50px;
     background: #FFF;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     /* gap: 10px; */
     padding: 10px;
@@ -521,6 +522,9 @@ footer {
 
     .game-lines {
         gap: 5px;
+    }
+    .game{
+        width: 150px;
     }
 
     .play-images {
